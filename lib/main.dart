@@ -1,5 +1,5 @@
+import 'package:asynconf/pages/home_page.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,32 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text("Asynconf 2022"),
-        ),
-        body:  Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              SvgPicture.asset(
-                "asset/images/logo.svg",
-                color: Colors.deepOrange,
-              ),
-              const Text("Asynconf 2022",
-                style: TextStyle(
-                  fontSize: 42,
-                  fontFamily: 'Poppins'
-                ),
-              ),
-              const Text("Salon virtuel de l'informatique. Du 27 au 29 octobre 2022",
-              style: TextStyle(fontSize: 24),
-                textAlign: TextAlign.center,
-              )
-            ],
-          ),
-        ),
-      ),
+      home: HomePage(),
     );
   }
 }
